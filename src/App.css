@@ -347,3 +347,16 @@ button {
   border-radius: 10px;
   background-color: rgb(57, 57, 241);
 }
+
+.footer a {
+  padding: 10px;
+  color: white;
+  background-color: #000000;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 50;
+  font-style: normal;
+  box-shadow: 10px 10px 30px rgb(128, 255, 111);
+  position: fixed;
+  bottom: 1px;
+  text-decoration: none;
+}

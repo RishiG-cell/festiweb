@@ -14,6 +14,7 @@ import EditAmountPage from "./pages/EditAmountPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AddFestivalPage from "./pages/AddFestivalPage";
 import EditFest from "./pages/EditFest";
+import Footer from "./components/Footer";
 
 function App() {
   const [festivals, setFestivals] = useState([]);
@@ -129,6 +130,7 @@ function App() {
         />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }
