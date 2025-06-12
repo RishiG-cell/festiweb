@@ -14,7 +14,6 @@ import EditAmountPage from "./pages/EditAmountPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AddFestivalPage from "./pages/AddFestivalPage";
 import EditFest from "./pages/EditFest";
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
 function App() {
   const [festivals, setFestivals] = useState([]);
@@ -22,6 +21,7 @@ function App() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
   const getAllFestivals = () => {
     axios

@@ -6,6 +6,7 @@ const Ticketspage = ({ festivals }) => {
   const { festId } = useParams();
   const [amount, setAmount] = useState(0);
   const navigate = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
   const oneFest = festivals.find((oneFestival) => {
     if (oneFestival.id === festId) {
