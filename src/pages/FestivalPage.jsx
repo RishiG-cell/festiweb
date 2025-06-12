@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const FestivalPage = ({ festivals, setFestivals }) => {
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
   return (
     <div className="festpage">
       {festivals.map((AllFests) => {
