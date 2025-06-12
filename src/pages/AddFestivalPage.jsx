@@ -22,6 +22,7 @@ const AddFestivalPage = ({
   const [image, setImage] = useState(null);
   const [price, SetPrice] = useState("");
   const nav = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

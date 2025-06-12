@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 const GenreList = ({ festivals }) => {
   const { genreList } = useParams();
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
   const filteredGenre = festivals.filter((oneFestival) => {
     if (oneFestival.genre === genreList) {

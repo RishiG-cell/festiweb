@@ -12,6 +12,7 @@ const EditFest = ({ festivals, setFestivals }) => {
   const [image, setImage] = useState(null);
   const [price, SetPrice] = useState("");
   const nav = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
   useEffect(() => {
     axios

@@ -6,6 +6,7 @@ const TicketCartPage = () => {
   const [allTickets, setAllTickets] = useState([]);
   const [grandTotal, setGrandTotal] = useState(0);
   const nav = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
   const getAllTickets = () => {
     axios

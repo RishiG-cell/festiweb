@@ -5,6 +5,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 const FestiDetailsPage = ({ countries, festivals, setFestivals, loggedIn }) => {
   const { festId } = useParams();
   const nav = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
   const oneFest = festivals.find((oneFestival) => {
     if (oneFestival.id === festId) {

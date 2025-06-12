@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = ({ festivals, setFestivals }) => {
   const [genre, setGenre] = useState([]);
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
 
   useEffect(() => {
     const arrayGenre = festivals.map((oneFest) => {
