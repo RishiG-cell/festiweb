@@ -8,7 +8,7 @@ const NavBar = () => {
       <Link to="/">
         <img src={logo} />
       </Link>
-      <h1>Festiweb</h1>
+      <h1 className="clip-text">Festiweb</h1>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/festival">Festi</Link>
